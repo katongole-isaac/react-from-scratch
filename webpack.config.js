@@ -36,7 +36,17 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         // the resolve-url-loader should be used between css-loader and sass-loader.
         // it is useful to resolve imported assets not relative to the main entry of scss files.
-        use: [MiniCssExtractPlugin.loader, "css-loader", "resolve-url-loader","sass-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "resolve-url-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
+        ],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
