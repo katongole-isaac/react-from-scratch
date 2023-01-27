@@ -1,5 +1,6 @@
 import React from "react";
 import "./app.css";
+import "./sass/index.scss";
 import data from "./data.toml";
 
 export default function () {
@@ -9,7 +10,9 @@ export default function () {
         <h2>Welcome to react</h2>
       </div>
       <div className="footer">
-        <p>Developed by {data.name} </p>
+        <p>
+          Developed by <span className="text-pink">{data.name}</span>
+        </p>
       </div>
     </>
   );

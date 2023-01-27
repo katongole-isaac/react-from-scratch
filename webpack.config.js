@@ -7,7 +7,7 @@ const toml = require("toml");
 const json5 = require("json5");
 const webpack = require("webpack");
 
-const cssRegExp = /\.css$/i;
+const cssRegExp = /\.(css)$/i;
 const imageRegExp = /\.(png|svg|gif|jpe?g)$/i;
 const jsExtensions = ["*", ".js", ".jsx"];
 
@@ -83,7 +83,7 @@ module.exports = {
     new webpack.ProvidePlugin({
       React: "react",
     }),
-    new MiniCssExtractPlugin(), 
+    new MiniCssExtractPlugin(),
   ],
 
   optimization: {

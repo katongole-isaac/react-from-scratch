@@ -1,5 +1,5 @@
 {
-  "name": "playground",
+  "name": "react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -25,6 +25,7 @@
     "html-webpack-plugin": "^5.5.0",
     "json5": "^2.2.1",
     "mini-css-extract-plugin": "^2.7.2",
+    "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.3.6",
