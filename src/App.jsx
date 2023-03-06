@@ -2,6 +2,7 @@ import React from "react";
 import "./app.css";
 import "./sass/index.scss";
 import data from "./data.toml";
+import dataInJsonFormat from "./data.json";
 
 export default function () {
   return (
