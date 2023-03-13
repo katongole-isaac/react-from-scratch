@@ -12,6 +12,6 @@ module.exports = merge(webpackConfig, {
     hot: true, //HMR
     port: 3001,
     open: true, // open the default browser on start
-    histroyApiFallback: true,
+    historyApiFallback: true,
   },
 });
