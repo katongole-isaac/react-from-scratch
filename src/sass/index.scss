@@ -1,5 +1,8 @@
-$color :  palevioletred;
+@import "./variables";
+@import "./utils/breakpoints";
+
+$color: palevioletred;
 
 .text-pink {
-    color: $color;
+  color: $color;
 }
